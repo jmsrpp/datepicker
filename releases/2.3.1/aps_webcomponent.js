@@ -8,6 +8,7 @@
             <option name="aps_format" value="YYYY-MM-dd">YYYY-MM-DD</option>
             <option name="aps_format" value="MM/dd/YYYY">MM/DD/YYYY</option>
             <option name="aps_format" value="dd.MM.YYYY">DD.MM.YYYY</option>
+            <option name="aps_format" value="MM-y">MM-y</option>
         </select>
         <p>Theme</p>
         <input type="checkbox" id="theme" /><label for="checkbox">Use dark theme</label>
