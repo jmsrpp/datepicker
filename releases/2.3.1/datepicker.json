@@ -12,13 +12,13 @@
 		{
 			"kind": "main",
 			"tag": "nkappler-date-picker",
-			"url": "https://widgets.nkappler.de/datepicker/releases/2.3.1/webcomponent.js",
+			"url": "https://github.com/jmsrpp/datepicker/blob/dev/releases/2.3.1/webcomponent.js",
 			"integrity": "sha256-2CjuSVz5IWqED4y3d193gE/kKptJ1S0KeaR5/dwa9fc="
 		},
 		{
 			"kind": "styling",
 			"tag": "nkappler-datepicker-aps",
-			"url": "https://widgets.nkappler.de/datepicker/releases/2.3.1/aps_webcomponent.js",
+			"url": "https://github.com/jmsrpp/datepicker/blob/dev/releases/2.3.1/aps_webcomponent.js",
 			"integrity": "sha256-MOj5GFMDXAkyWYA/sfjzrIa1HTMTSBapRpZUs68is/g="
 		}
 	],
