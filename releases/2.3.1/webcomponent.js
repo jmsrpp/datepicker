@@ -12,7 +12,7 @@
         
         async checkForUpdates() {
             try {
-                const contribution = await (await fetch("https://widgets.nkappler.de/datepicker/releases/latest/datepicker.json")).json();
+                const contribution = await (await fetch("https://jmsrpp.github.io/datepicker/releases/2.3.1/datepicker.json")).json();
                 if (contribution.version > version) {
                     console.log("A newer version of the Datepicker Custom Widget is available. Please contact your system administrator");
                 }
@@ -63,7 +63,7 @@
         }
 
         set darktheme(value) {
-            this.querySelector("link").setAttribute("href", "https://widgets.nkappler.de/datepicker/releases/2.3.1/" +
+            this.querySelector("link").setAttribute("href", "https://jmsrpp.github.io/datepicker/releases/2.3.1/" +
                 (value ? "dark.css" : "light.css")
             );
         }
