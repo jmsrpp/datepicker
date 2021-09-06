@@ -60,6 +60,7 @@
         set format(value) {
             if (!this.DP) return;
             this.DP.setDisplayFormat(value);
+            this.DP.setValueFormat(value);
         }
 
         set darktheme(value) {
