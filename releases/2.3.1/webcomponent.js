@@ -1,7 +1,7 @@
 (function () {
     let version = "2.3.1";
     let tmpl = document.createElement('template');
-    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://widgets.nkappler.de/datepicker/releases/2.3.1/light.css"/>`;
+    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://jmsrpp.github.io/datepicker/releases/2.3.1/light.css"/>`;
 
     class DatePicker extends HTMLElement {
         constructor() {
