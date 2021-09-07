@@ -27,11 +27,12 @@
             var ctor = sap.m.DatePicker;
             if (this._enablerange) { ctor = sap.m.DateRangeSelection; }
             this.DP = new ctor({
-                displayFormatType: "MM-y",
-                change: function () {
+                displayFormatType: "sap.ui.core.CalendarType.Gregorian",
+                displayFormat: "MM-y",
+                change: function (e) {
                     this.fireChanged();
                     this.dispatchEvent(new Event("onChange"));
-                    console.log("Widget changed");
+                    console.log(e);
                 }.bind(this)
             }).addStyleClass("datePicker");
             this.DP.placeAt(this);
