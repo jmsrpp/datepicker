@@ -6,7 +6,7 @@
     class DatePicker extends HTMLElement {
         constructor() {
             super();
-            //this.init();
+            this.init();
             this.checkForUpdates();
         }
         
@@ -22,6 +22,7 @@
         init() {
             console.log("init called");
             if (this.children.length === 2) return; //constructor called during drag+drop
+            console.log(this.children);
             if (!this.querySelector("link")) {
                 this.appendChild(tmpl.content.cloneNode(true));
             }
