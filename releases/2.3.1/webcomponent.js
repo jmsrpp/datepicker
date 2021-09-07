@@ -35,6 +35,7 @@
                 }.bind(this)
             }).addStyleClass("datePicker");
             this.DP.placeAt(this);
+            console.log(this.DP);
         }
 
         fireChanged() {
