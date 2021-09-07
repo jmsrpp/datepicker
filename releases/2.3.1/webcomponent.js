@@ -28,6 +28,7 @@
             if (this._enablerange) { ctor = sap.m.DateRangeSelection; }
             this.DP = new ctor({
                 valueFormat: "MM-y",
+                displayFormat: "MM-y",
                 change: function () {
                     this.fireChanged();
                     this.dispatchEvent(new Event("onChange"));
