@@ -24,19 +24,17 @@
             if (!this.querySelector("link")) {
                 this.appendChild(tmpl.content.cloneNode(true));
             }
-            var ctor = sap.m.DatePicker({
-                valueFormat: "MM-y",
-                displayFormat: "MM-y"
-            });
+            var ctor = sap.m.DatePicker;
             if (this._enablerange) { ctor = sap.m.DateRangeSelection; }
             this.DP = new ctor({
+                displayFormatType: "MM-y",
                 change: function () {
                     this.fireChanged();
                     this.dispatchEvent(new Event("onChange"));
+                    console.log("Widget changed");
                 }.bind(this)
             }).addStyleClass("datePicker");
             this.DP.placeAt(this);
-            console.log(this.DP);
         }
 
         fireChanged() {
