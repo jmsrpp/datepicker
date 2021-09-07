@@ -28,14 +28,15 @@
             if (this._enablerange) { ctor = sap.m.DateRangeSelection; }
             this.DP = new ctor({
                 displayFormatType: "Gregorian",
-                displayFormat: "MM-y",
-                change: function (e) {
+                displayFormat: "MM/yyyy",
+                valueFormat: "MM/yyyy",
+                change: function () {
                     this.fireChanged();
                     this.dispatchEvent(new Event("onChange"));
-                    console.log(e);
                 }.bind(this)
             }).addStyleClass("datePicker");
             this.DP.placeAt(this);
+            console.log(this.DP);
         }
 
         fireChanged() {
