@@ -6,7 +6,7 @@
     class DatePicker extends HTMLElement {
         constructor() {
             super();
-            this.init();
+            //this.init();
             this.checkForUpdates();
         }
         
