@@ -20,12 +20,15 @@
         }
 
         init() {
+            console.log("init called");
             if (this.children.length === 2) return; //constructor called during drag+drop
             if (!this.querySelector("link")) {
                 this.appendChild(tmpl.content.cloneNode(true));
             }
             var ctor = sap.m.DatePicker;
             if (this._enablerange) { ctor = sap.m.DateRangeSelection; }
+            console.log("ctor defined");
+            console.log(ctor);
             this.DP = new ctor({
                 displayFormatType: "Gregorian",
                 displayFormat: "MM/yyyy",
@@ -36,7 +39,8 @@
                 }.bind(this)
             }).addStyleClass("datePicker");
             this.DP.placeAt(this);
-            console.log(this.DP);
+            console.log("new date picker created");
+            console.log(this);
         }
 
         fireChanged() {
