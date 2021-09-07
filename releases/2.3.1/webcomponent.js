@@ -28,7 +28,6 @@
             var ctor = sap.m.DatePicker;
             if (this._enablerange) { ctor = sap.m.DateRangeSelection; }
             console.log("ctor defined");
-            console.log(ctor);
             this.DP = new ctor({
                 displayFormatType: "Gregorian",
                 displayFormat: "MM/yyyy",
@@ -40,7 +39,7 @@
             }).addStyleClass("datePicker");
             this.DP.placeAt(this);
             console.log("new date picker created");
-            console.log(this);
+            console.log(this.DP);
         }
 
         fireChanged() {
