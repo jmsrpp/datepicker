@@ -1,5 +1,5 @@
 (function () {
-    let version = "2.3.2";
+    let version = "2.3.1";
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://jmsrpp.github.io/datepicker/releases/2.3.1/light.css"/>`;
 
